@@ -12,8 +12,14 @@ const randomJoke = () => {
     }
 };
 
-randomJoke();
+// randomJoke();
 
-
+const chooseANumber = num => {
+    if (num >= 1 && num <= 10) {
+        return randomJoke();
+    } else {
+        console.log('Please choose a number between 1 & 10');
+    }
+};
 
 
